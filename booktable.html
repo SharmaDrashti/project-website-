@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLY STAR RESTURANTE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imges/logo1.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="foodmenu.html">food menu</a>
+                <a href="booktable.html">booktable</a>
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="i1">
+                <i class="fa-solid fa-house"></i>&nbsp;&nbsp;
+            </div>
+            <div class="i2">
+                <i class="fa-solid fa-user"></i>&nbsp;&nbsp;
+            </div>
+            <div class="i3">
+
+                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon"></i>&nbsp;&nbsp;
+            </div>
+
+        </div>
+        <!-- <div class="account">
+            <ul>
+                <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon"></i></a>
+
+            </ul>
+        </div>
+        <div class="search" id="searchinput2">
+            <input type="search">
+            <i class="fa-solid fa-magnifying-glass searchicon"></i>
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div> -->
+    </header>
+
+    <main>
+        <h2>Book a Table</h2>
+        <form action="submit-reservation.php" method="post">
+            <fieldset>
+                <legend>Reservation Details</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="4"
+                    placeholder="Any special requests or dietary restrictions?"></textarea>
+
+                <button type="submit">Submit Reservation</button>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>
